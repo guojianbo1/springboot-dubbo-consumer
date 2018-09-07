@@ -17,7 +17,7 @@ import javax.annotation.Resource;
 @RequestMapping("/whiteaccount")
 public class WhiteAccountController {
 
-    @Reference(version = "1.0.0") //相当于<dubbo:reference id="" interface=..
+    @Reference(version = "1.0.0") //相当于<dubbo:reference id="" interface=..  >
     private IWhiterAccountService whiterAccountService;
 
     @RequestMapping("/getwhiteaccountbyid/{id}")
